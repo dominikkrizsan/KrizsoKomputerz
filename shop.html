@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Krizso Komputerz - Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+      font-family: 'Press Start 2P', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 p-6 fixed top-0 w-full z-10 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <img src="your-logo.png" alt="Krizso Komputerz Logo" class="h-16 w-auto">
+      <nav>
+        <a href="index.html" class="text-gray-300 hover:text-purple-400 mx-4">Home</a>
+        <a href="#shop" class="text-gray-300 hover:text-purple-400 mx-4">Shop</a>
+        <a href="contact.html" class="text-gray-300 hover:text-purple-400 mx-4">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-64 flex flex-col justify-center items-center text-center bg-cover bg-center mt-16" style="background-image: url('shop-background.jpg');">
+    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+      <h1 class="text-4xl font-extrabold text-white">Our Gaming PC Collection</h1>
+      <p class="text-xl text-gray-200 mt-4">Choose the perfect build for your needs</p>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="py-16 bg-gray-900">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center text-purple-400 mb-8">Shop Gaming PCs</h2>
+      
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="pc1.jpg" alt="Gaming PC 1" class="rounded-lg w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Elite Gamer Pro</h3>
+          <p class="text-gray-300">AMD Ryzen 9 5900X, 32GB RAM, RTX 3080 Ti, 1TB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">$2,499</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="pc2.jpg" alt="Gaming PC 2" class="rounded-lg w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Ultra Power Max</h3>
+          <p class="text-gray-300">Intel Core i9-13900K, 64GB RAM, RTX 4090, 2TB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">$3,799</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="pc3.jpg" alt="Gaming PC 3" class="rounded-lg w-full h-48 object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Gamer Beast X</h3>
+          <p class="text-gray-300">AMD Ryzen 7 5800X, 16GB RAM, RTX 3070, 512GB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">$1,699</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Add more product cards as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto text-center text-gray-400">
+      &copy; 2024 Krizso Komputerz. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

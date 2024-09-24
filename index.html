@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KrizsoKomputerz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Wave Animation */
+        @keyframes wave {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .transition-transform {
+            transition: transform 0.2s ease;
+        }
+
+        .hover\:scale-105:hover {
+            transform: scale(1.05);
+        }
+
+        .wave-text span {
+            display: inline-block;
+            animation: wave 1.5s ease-in-out infinite;
+            -webkit-text-stroke: 1px white;
+            /* White outline around the letters */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            /* Dark shadow for extra depth */
+        }
+
+        .letter-background {
+            -webkit-text-stroke: 1px white;
+            /* White outline around the letters */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            /* Dark shadow for extra depth */
+        }
+
+        /* Krizso Text Animation */
+        .wave-krizso span:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .wave-krizso span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .wave-krizso span:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .wave-krizso span:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .wave-krizso span:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .wave-krizso span:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        /* Komputerz Text Animation */
+        .wave-komputerz span:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .wave-komputerz span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .wave-komputerz span:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .wave-komputerz span:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .wave-komputerz span:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .wave-komputerz span:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        .wave-komputerz span:nth-child(7) {
+            animation-delay: 0.7s;
+        }
+
+        .wave-komputerz span:nth-child(8) {
+            animation-delay: 0.8s;
+        }
+
+        .wave-komputerz span:nth-child(9) {
+            animation-delay: 0.9s;
+        }
+
+        /* Color-changing Button Animation */
+        @keyframes color-change {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .color-changing-button {
+            background: linear-gradient(270deg, #ff00cc, #3333ff, #8c00ff);
+            background-size: 400% 400%;
+            animation: color-change 8s ease infinite;
+        }
+
+        header {
+            transition: top 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 bg-opacity-80 p-4 fixed top-0 w-full z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="./assets/logo.png" alt="Krizso Komputerz Logo" class="h-24 rounded-xl w-auto">
+            <nav class="flex items-center">
+                <a href="#about" class="text-gray-300 hover:text-purple-400 transition mx-4">About Us</a>
+                <a href="#services" class="text-gray-300 hover:text-purple-400 transition mx-4">Services</a>
+                <a href="#contact" class="text-gray-300 hover:text-purple-400 transition mx-4">Contact</a>
+                <a href="./shop.html" class="flex items-center bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg transition mx-4">
+                    <i class="fas fa-shopping-cart mr-2"></i>Shop
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section with Video Background -->
+    <section class="relative h-screen flex flex-col justify-center items-center text-center">
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline class="absolute w-full h-full object-cover">
+            <source src="./assets/mainvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Animated Text -->
+        <div class="relative z-10 text-white p-8">
+            <h1 class="text-6xl font-bold tracking-tight mb-8 wave-text">
+                <!-- Separate Krizso and Komputerz with unique animation classes -->
+                <span class="wave-krizso">
+                    <span>K</span><span>r</span><span>i</span><span>z</span><span>s</span><span>o</span>
+                </span>
+                <span class="wave-komputerz">
+                    <span>K</span><span>o</span><span>m</span><span>p</span><span>u</span><span>t</span><span>e</span><span>r</span><span>z</span>
+                </span>
+            </h1>
+            <p class="text-2xl mb-8 letter-background">Custom Gaming PCs <br> Built for Performance</p>
+
+            <!-- Color-changing Button -->
+            <a href="./shop.html"
+                class="mt-6 color-changing-button text-white px-8 py-4 rounded-full shadow-lg transition duration-300 text-xl font-bold">
+                Discover Our Builds
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-64 bg-gray-900 fade-in">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <!-- Image Section -->
+            <div class="md:w-1/2 p-4">
+                <img src="./assets/about.jpg" alt="About Krizso Komputerz" class="rounded-lg shadow-lg w-full h-auto">
+            </div>
+
+            <!-- Text Section -->
+            <div class="md:w-1/2 p-4 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-purple-400 mb-6">About Krizso Komputerz</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    We specialize in building custom, high-performance gaming PCs. At Krizso Komputerz, we combine
+                    advanced hardware with cutting-edge cooling solutions, ensuring that your gaming experience is
+                    seamless and superior.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-64 bg-gray-900 relative">
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center"
+            style="background-image: url('assets/mainbg.jpg'); background-attachment: fixed; filter: blur(5px);"></div>
+        <div class="relative container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-purple-400 mb-8">Our Services</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service 1 -->
+                <div
+                    class="bg-gray-800 bg-opacity-80 p-8 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-white mb-4">Custom Gaming PCs</h3>
+                    <img src="assets/custom.jpg" alt="Custom Gaming PCs"
+                        class="w-full mx-auto object-cover rounded-md mb-4">
+                    <p class="text-gray-300">From basic setups to high-end rigs, we build custom PCs tailored to your
+                        gaming style and needs.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-gray-800 bg-opacity-80 p-8 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-white mb-4">PC Upgrades</h3>
+                    <img src="assets/upgrade.jpg" alt="PC Upgrades" class="w-full mx-auto object-cover rounded-md mb-4">
+                    <p class="text-gray-300">Boost your system’s performance with the latest hardware, from GPUs to
+                        memory upgrades.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-gray-800 bg-opacity-80 p-8 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-white mb-4">PC Repairs</h3>
+                    <img src="assets/repair.jpg" alt="PC Repairs" class="w-full mx-auto object-cover rounded-md mb-4">
+                    <p class="text-gray-300">Our repair services ensure your PC is running at optimal performance,
+                        tackling any hardware issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="py-64 bg-gray-900 relative">
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center"
+            style="background-image: url('your-contact-background.jpg');"></div>
+        <div class="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Left Side: Get in Touch -->
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl font-bold text-purple-400 mb-6">Get in Touch</h2>
+                <p class="text-lg text-gray-300 mb-8">We’d love to hear from you! Please fill out the form below:</p>
+
+                <form action="your_form_handler.php" method="POST">
+                    <div class="mb-4">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea name="message" placeholder="Your Message"
+                            class="w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            rows="4" required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">Send
+                        Message</button>
+                </form>
+            </div>
+
+            <!-- Right Side: Social Media Icons -->
+            <div class="flex flex-col items-center text-center">
+                <h3 class="text-2xl font-bold text-purple-400 mb-4">Follow Us</h3>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-96">
+                    <div class="flex flex-col space-y-4">
+                        <a href="https://www.tiktok.com/@yourtiktok" target="_blank"
+                            class="flex items-center bg-purple-600 hover:bg-purple-500 text-white w-full px-4 py-4 rounded-lg transition transform hover:scale-105">
+                            <i class="fab fa-tiktok fa-2x mr-5"></i>TikTok
+                        </a>
+                        <a href="https://www.instagram.com/yourinstagram" target="_blank"
+                            class="flex items-center bg-purple-600 hover:bg-purple-500 text-white w-full px-4 py-4 rounded-lg transition transform hover:scale-105">
+                            <i class="fab fa-instagram fa-2x mr-5"></i>Instagram
+                        </a>
+                        <a href="https://www.facebook.com/yourfacebookpage" target="_blank"
+                            class="flex items-center bg-purple-600 hover:bg-purple-500 text-white w-full px-4 py-4 rounded-lg transition transform hover:scale-105">
+                            <i class="fab fa-facebook fa-2x mr-5"></i>Facebook
+                        </a>
+                        <a href="https://www.youtube.com/@youryoutube" target="_blank"
+                            class="flex items-center bg-purple-600 hover:bg-purple-500 text-white w-full px-4 py-4 rounded-lg transition transform hover:scale-105">
+                            <i class="fab fa-youtube fa-2x mr-5"></i>YouTube
+                        </a>
+                        <a href="mailto:contact@krizsokomputerz.com"
+                            class="flex items-center bg-purple-600 hover:bg-purple-500 text-white w-full px-4 py-4 rounded-lg transition transform hover:scale-105">
+                            <i class="fas fa-envelope fa-2x mr-5"></i>Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center text-gray-400">
+            &copy; 2024 Krizso Komputerz. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector("header");
+
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-100px"; // Eltüntetés
+        } else {
+            navbar.style.top = "0"; // Megjelenítés
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // A legutolsó scroll pozíció
+    });
+</script>
+
+</html>
