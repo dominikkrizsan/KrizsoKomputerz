@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Krizso Komputerz - Shop</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -18,7 +19,7 @@
   <!-- Header Section -->
   <header class="bg-gray-800 p-6 fixed top-0 w-full z-10 shadow-lg">
     <div class="container mx-auto flex justify-between items-center">
-      <img src="your-logo.png" alt="Krizso Komputerz Logo" class="h-16 w-auto">
+      <img src="./assets/logo.png" alt="Krizso Komputerz Logo" class="h-24 rounded-xl w-auto">
       <nav>
         <a href="index.html" class="text-gray-300 hover:text-purple-400 mx-4">Home</a>
         <a href="#shop" class="text-gray-300 hover:text-purple-400 mx-4">Shop</a>
@@ -28,8 +29,8 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative h-64 flex flex-col justify-center items-center text-center bg-cover bg-center mt-16" style="background-image: url('shop-background.jpg');">
-    <div class="bg-black bg-opacity-60 p-6 rounded-lg">
+  <section class="relative h-96 flex flex-col justify-center items-center text-center bg-cover bg-center mt-16" style="background-image: url('./assets/mainbg.jpg');">
+    <div class="bg-black bg-opacity-60 p-6 rounded-lg mt-20">
       <h1 class="text-4xl font-extrabold text-white">Our Gaming PC Collection</h1>
       <p class="text-xl text-gray-200 mt-4">Choose the perfect build for your needs</p>
     </div>
@@ -42,41 +43,97 @@
       
       <!-- Product Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-
+        
         <!-- Product Card 1 -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
-          <img src="pc1.jpg" alt="Gaming PC 1" class="rounded-lg w-full h-48 object-cover mb-4">
+          <img src="./assets/pcs/5950x_6950xt.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Elite Gamer Pro Max</h3>
+          <p class="text-gray-300">Ryzen 9 5950X <br> ASRock Phantom RX 6950 XT <br> 32GB RAM 3600Mhz <br> 1TB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">1400 €</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="./assets/pcs/5700x_3080.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Elite Gamer Pro V2</h3>
+          <p class="text-gray-300">Ryzen 7 5700X <br> Asus TUF RTX 3080 8GB <br> 32GB RAM 3200Mhz <br> 512GB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">1050 €</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="./assets/pcs/5700x_6700xt.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
           <h3 class="text-xl font-semibold text-white mb-2">Elite Gamer Pro</h3>
-          <p class="text-gray-300">AMD Ryzen 9 5900X, 32GB RAM, RTX 3080 Ti, 1TB NVMe SSD</p>
+          <p class="text-gray-300">Ryzen 7 5700X <br> HellHound RX 5700 XT 12Gb <br> 32GB RAM 3200Mhz <br> 512GB NVMe SSD</p>
           <div class="mt-4">
-            <span class="text-xl font-bold text-purple-400">$2,499</span>
+            <span class="text-xl font-bold text-purple-400">900 €</span>
             <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
           </div>
         </div>
-
-        <!-- Product Card 2 -->
+        <!-- Product Card 1 -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
-          <img src="pc2.jpg" alt="Gaming PC 2" class="rounded-lg w-full h-48 object-cover mb-4">
-          <h3 class="text-xl font-semibold text-white mb-2">Ultra Power Max</h3>
-          <p class="text-gray-300">Intel Core i9-13900K, 64GB RAM, RTX 4090, 2TB NVMe SSD</p>
+          <img src="./assets/pcs/10400_2080.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Elite Gamer</h3>
+          <p class="text-gray-300">Intel Core i5 10400f <br> Zotac RTX 2080 8Gb <br> 16GB RAM 3200Mhz <br> 512GB NVMe SSD</p>
           <div class="mt-4">
-            <span class="text-xl font-bold text-purple-400">$3,799</span>
+            <span class="text-xl font-bold text-purple-400">660 €</span>
             <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
           </div>
         </div>
-
-        <!-- Product Card 3 -->
+        <!-- Product Card 1 -->
         <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
-          <img src="pc3.jpg" alt="Gaming PC 3" class="rounded-lg w-full h-48 object-cover mb-4">
-          <h3 class="text-xl font-semibold text-white mb-2">Gamer Beast X</h3>
-          <p class="text-gray-300">AMD Ryzen 7 5800X, 16GB RAM, RTX 3070, 512GB NVMe SSD</p>
+          <img src="./assets/pcs/3500x_1070ti.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">White Ultra Power</h3>
+          <p class="text-gray-300">Ryzen 5 3500X <br> KFA2 GTX 1070 Ti <br> 16GB RAM 3200Mhz <br> 512GB NVMe SSD</p>
           <div class="mt-4">
-            <span class="text-xl font-bold text-purple-400">$1,699</span>
+            <span class="text-xl font-bold text-purple-400">550 €</span>
             <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
           </div>
         </div>
-
-        <!-- Add more product cards as needed -->
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="./assets/pcs/3900x_5700xt.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Ultra Gamer</h3>
+          <p class="text-gray-300">Ryzen 9 3900X <br> MSI RX 5700 XT 8Gb <br> 16GB RAM 3200Mhz <br> 512GB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">560 €</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="./assets/pcs/7700k_1070ti.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Gamer Beast</h3>
+          <p class="text-gray-300">Intel Core i7 7700K <br> KFA2 RTX 1070 Ti 8Gb <br> 16GB RAM 3200Mhz <br> 512GB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">460 €</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="./assets/pcs/6700k_1070.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Advanved Gamer</h3>
+          <p class="text-gray-300">Intel Core i7 6700K <br> Zotac GTX 1070 8Gb <br> 16GB RAM 3000Mhz <br> 512GB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">425 €</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
+        <!-- Product Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-purple-600 transition transform hover:scale-105">
+          <img src="./assets/pcs/1700x_rx580.png" alt="Gaming PC 1" class="rounded-lg w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Gamer</h3>
+          <p class="text-gray-300">Ryzen 7 1700X<br> XFX RX 580 8Gb <br> 16GB RAM 3000Mhz <br> 256GB NVMe SSD</p>
+          <div class="mt-4">
+            <span class="text-xl font-bold text-purple-400">380 €</span>
+            <a href="#" class="ml-4 bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full shadow-lg transition duration-300">Buy Now</a>
+          </div>
+        </div>
 
       </div>
     </div>
